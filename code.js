@@ -21,7 +21,7 @@ function aa(){
     b = document.querySelector('.answers.buttons').children;
     for(i=0;i<b.length;i++)
      for(ii=0;ii<players.length;ii++)
-       if(img=='url("'+players[ii].image+'")') && (new RegExp(players[ii].name.replace(' ','.*'),'gi')).test(b[i].innerText)) b[i].click() ;
+       if(img=='url("'+players[ii].image+'")' && (new RegExp(players[ii].name.replace(' ','.*'),'gi')).test(b[i].innerText)) b[i].click() ;
 
     } catch(t){};
     setTimeout(function(){ aa();}, 10);
